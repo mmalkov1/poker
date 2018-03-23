@@ -23,7 +23,7 @@ const sequence = require('run-sequence');
 gulp.task('html', () =>
   // Берем все файлы с расширением html в папке src
   gulp
-    .src('./src/pages/*.html')
+    .src('./src/*.html')
    // обратаываем все include теги через posthtml для инлайн спрайтов
     // если таковые есть
     .pipe(posthtml([include()]))
@@ -100,7 +100,7 @@ gulp.task('images', () =>
 
 // Таск копирования всех шрифтов из папки fonts в build/fonts
 gulp.task('fonts', () =>
-  gulp.src('./src/fonts/**/*.{woff,woff2}').pipe(gulp.dest('./build/fonts')),
+  gulp.src('./src/fonts/**/*.{woff,woff2,ttf}').pipe(gulp.dest('./build/fonts')),
 );
 
 // Таск слежения за изменениями файлов
