@@ -1,0 +1,20 @@
+@media only screen and (max-width:480px) {
+    .main {
+        &__container-form-registation {
+            background: transparent;
+            box-shadow: 1px 1px 1px 1px transparent;
+        }
+        &__form-input {
+            border: 2px solid transparent;
+            border-bottom: 2px solid $list-activ-grey;
+            background-color: transparent;
+        }
+        &__container-buttons {
+            padding: 70px 0 0;
+        }
+        &__form-input,
+        &__form-label {
+            font-size: 18px;
+    }
+    }
+}
