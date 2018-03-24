@@ -1,0 +1,9 @@
+.btn-s_orange {
+	@include buttons-orange (137px, 8px, 11px);
+}
+.btn-s_grey {
+	@include buttons-grey (137px, 8px, 11px);
+}
+body {
+	background-color: $main-background;
+}
