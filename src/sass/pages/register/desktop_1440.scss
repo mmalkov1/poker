@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: $main-background;
+}
+.main {
+    &__container-form-registation {
+        max-width: 410px;
+        padding: 30px;
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 1px 1px 1px 1px $font-grey;
+    }
+    &__form-registation-title {
+        text-align: center;
+        font-family: 'Ubuntu',sans-serif;
+        font-size: 24px;
+    }
+    &__container-field {
+        padding: 18px 0 0;
+    }
+    &__form-label {
+        display: block;
+        font-size: 20px;
+        color: $orange;
+        font-family: 'Ubuntu',sans-serif;
+        padding: 0 0 10px;
+    }
+    &__form-input {
+        width: 100%;
+        padding: 5px 0 5px 15px;
+        border: 1px solid $list-activ-grey;
+        font-size: 20px;
+    }
+    &__container-buttons {
+        padding: 15px 0 0;
+    }
+    &__continue-button {
+        @include button(142px, 8px 0, #FF6C00, 15px, #FFBA57);
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,10 @@
+@media only screen and (min-width:480px) and (max-width:676px) {
+    .main {
+        &__main {
+            padding: 200px 0 20px;
+        }
+        &__btn {
+            margin-top: 340px;
+        }
+    }
+}
