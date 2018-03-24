@@ -6,7 +6,6 @@ body {
 }
 .main {
     &__container-form-registation {
-        /*border: 1px solid red;*/
         max-width: 410px;
         padding: 30px;
         margin: 0 auto;
@@ -16,12 +15,10 @@ body {
     &__form-registation-title {
         text-align: center;
         font-family: 'Ubuntu',sans-serif;
-        /*font-weight: bold;*/
         font-size: 24px;
     }
     &__container-field {
         padding: 18px 0 0;
-        /*border: 1px solid red;*/
     }
     &__form-label {
         display: block;
