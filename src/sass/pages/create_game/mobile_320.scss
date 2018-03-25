@@ -1,0 +1,127 @@
+body {
+  background: #f1f2f2;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__button-create {
+    display: flex;
+    align-items: center;
+    width: 290px;
+    height: 40px;
+    background-color: #fff;
+    font-family: $roboto-font;
+    font-size: 16px;
+    color: #808285;
+    border: none;
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
+    margin: 8px 0;
+    &:before {
+      content: url("../../img/create_game/plus.svg");
+      margin-right: 15px;
+    }
+  }
+  &__button-saved {
+    display: flex;
+    align-items: center;
+    width: 290px;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
+    font-family: $roboto-font;
+    font-size: 16px;
+    color: #808285;
+    margin: 8px 0;
+    &:before {
+      content: url("../../img/create_game/list.svg");
+      margin-right: 15px;
+    }
+  }
+  &__create {
+    //display: none;
+  }
+
+  &__title {
+    display: none;
+  }
+
+  &__title-min {
+    margin: 10px 0 1px;
+    color: $orange;
+    font-family: $roboto-font;
+  }
+
+  &__input {
+    width: 99%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #cbcdce;
+    background-color: $main-background;
+    &_min {
+      border-bottom: 1px solid #cbcdce;
+    }
+  }
+  &__button-add {
+    display: block;
+    background: #fff url("../../../img/create_game/plus.svg") center center ;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 10px auto;
+  }
+
+  &__button-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__button-cancel {
+    height: 30px;
+    width: 142px;
+    background-color: #d1d3d4;
+    font-family: $ubuntu-font;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 8px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
+    &:hover {
+      background-color: #ff6c00;
+    }
+  }
+  &__button-game {
+    height: 30px;
+    width: 142px;
+    background-color: #d1d3d4;
+    font-family: $ubuntu-font;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 8px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
+    &:hover {
+      background-color: #ff6c00;
+    }
+  }
+}
+
+
+

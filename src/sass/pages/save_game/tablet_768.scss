@@ -1,0 +1,69 @@
+@media all and (min-width: 768px) {
+  .result {
+    width: 470px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 70px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+
+    &__button-saved {
+      width: 160px;
+      position: absolute;
+      top: 20px;
+      left: 25px;
+      background: #f1f2f2;
+    }
+
+    &__button-create {
+      width: 160px;
+      position: absolute;
+      top: 70px;
+      left: 25px;
+      background: #f1f2f2;
+    }
+
+    &__button-account {
+      width: 160px;
+      position: absolute;
+      top: 120px;
+      left: 25px;
+      background: #f1f2f2;
+    }
+
+    &__information {
+      width: 280px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__title {
+      display: block;
+      text-align: center;
+      font-family: $ubuntu-font;
+      font-size: 23px;
+      color: #414042;
+    }
+    &__game-name {
+      position: relative;
+      &:after {
+        content: 'x';
+        font-size: 14px;
+        position: absolute;
+        top: -5px;
+        right: -150px;
+      }
+    }
+    &__text {
+      text-align: left;
+    }
+    &__table {
+      text-align: center;
+    }
+
+    &__button-game {
+      width: 142px;
+    }
+  }
+}
