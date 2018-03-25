@@ -51,7 +51,9 @@
 			display: block;
 			margin: 0 auto 15px;
 			cursor: pointer;
-			transition: all 0.2s;
+			
+
+			@include buttons-grey (137px, 8px, 11px);
 			
 			&:hover {
 				@include buttons-orange (137px, 8px, 11px);
@@ -213,6 +215,12 @@
 		display: block;
 		margin: auto;
 		cursor: pointer;
+
+		@include buttons-grey (137px, 8px, 11px);
+
+		&:hover {
+			@include buttons-orange (137px, 8px, 11px);
+		}
 	}
 }
 

@@ -1,63 +1,67 @@
 @media all and (min-width: 768px){
-  .content {
+  .create-game {
     width: 708px;
     position: relative;
-    margin-bottom: 70px;
-    padding: 0 30px;
+    padding: 0 30px 70px;
     display: flex;
     align-items: flex-end;
-  }
   
-  .form {
-    display: flex;
-    width: 440px;
-    padding: 20px;
-    background-color: #fff;
-    margin: 0;
-
-    &__button-create {
-      width: 190px;
-      position: absolute;
-      top: 0;
-      left: 25px;
-    }
-    &__button-saved {
-      width: 190px;
-      position: absolute;
-      top: 50px;
-      left: 25px;
-    }
-    &__create {
-      display: block;
-      margin: 0 60px;
-    }
-    &__title {
-      display: block;
-      text-align: center;
-      font-family: $roboto-font;
-      font-size: 31px;
-      color: #202b52;
-      margin-bottom: 20px;
-    }
-    &__input {
-      background-color: #fff;
-      border: 1px solid $form-border;
-    }
-    &__button-block {
+  
+    .form {
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      margin: 30px;
-    }
-    &__button-cancel {
-      height: 30px;
-      width: 125px;
-    }
-    &__button-game {
-      height: 30px;
-      width: 125px;
+      width: 440px;
+      padding: 20px;
+      background-color: $buttom-font;
+      margin: 0;
+
+      &__button-create {
+        width: 190px;
+        position: absolute;
+        top: 0;
+        left: 25px;
+      }
+      &__button-saved {
+        width: 190px;
+        position: absolute;
+        top: 50px;
+        left: 25px;
+      }
+      &__create {
+        display: block;
+        margin: 0 60px;
+      }
+      &__title {
+        display: block;
+        text-align: center;
+        font-family: $roboto-font;
+        font-size: 31px;
+        color: $form-title-darkblue;
+        margin-bottom: 20px;
+      }
+      &__input {
+        background-color: $buttom-font;
+        border: 1px solid $form-border;
+      }
+
+      &__button-add{
+        height: 27px;
+        width: 27px;
+      }
+
+      &__button-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 30px;
+      }
+      &__button-cancel {
+        height: 30px;
+        width: 125px;
+      }
+      &__button-game {
+        height: 30px;
+        width: 125px;
+      }
     }
   }
-
-
 }

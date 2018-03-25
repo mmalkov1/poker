@@ -10,7 +10,18 @@
         }
         &__user-image {
             display: block;
-            width: 25px;
+            width: 100%;
+            height: auto;
+        }
+        &__image-block {
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+        &__profile {
+            display: none;
         }
     }
 }

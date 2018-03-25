@@ -75,8 +75,15 @@
 			}
 		}
 		&__button-end {
-			@include buttons-orange (205px, 15px, 17px);
+			@include buttons-grey (205px, 15px, 17px);
 			border-radius: 8px;
+			transition: background-color 0.2s;
+
+			&:hover {
+				@include buttons-orange (205px, 15px, 17px);
+				border-radius: 8px;
+				transition: background-color 0.2s;
+			}
 		}
 	}
 

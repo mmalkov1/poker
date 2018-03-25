@@ -1,6 +1,7 @@
 @media all and (min-width: 768px) {
   .result {
-    width: 470px;
+    box-sizing: border-box;
+    width: 530px;
     background: #fff;
     position: relative;
     margin-bottom: 70px;
@@ -13,7 +14,7 @@
       position: absolute;
       top: 20px;
       left: 25px;
-      background: #f1f2f2;
+      background: $list-grey;
     }
 
     &__button-create {
@@ -21,7 +22,7 @@
       position: absolute;
       top: 70px;
       left: 25px;
-      background: #f1f2f2;
+      background: $list-grey;
     }
 
     &__button-account {
@@ -29,7 +30,7 @@
       position: absolute;
       top: 120px;
       left: 25px;
-      background: #f1f2f2;
+      background: $list-grey;
     }
 
     &__information {
@@ -48,6 +49,7 @@
     &__game-name {
       position: relative;
       &:after {
+        cursor: pointer;
         content: 'x';
         font-size: 14px;
         position: absolute;
@@ -64,6 +66,7 @@
 
     &__button-game {
       width: 142px;
+      font-size: 15px;
     }
   }
 }

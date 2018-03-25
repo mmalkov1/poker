@@ -1,9 +1,35 @@
-.btn-s_orange {
-	@include buttons-orange (137px, 8px, 11px);
-}
-.btn-s_grey {
-	@include buttons-grey (137px, 8px, 11px);
-}
 body {
+	position: relative;
+	min-height: 100vh;
 	background-color: $main-background;
 }
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+button {
+	transition: background-color .2s;
+
+	&:hover {
+		transition: background-color .2s;
+	}
+}
+
+
+// :placeholder {
+// 	color: $form-font;
+// } 
+// input {
+// 	height: 30px;	
+// 	padding-left: 10px;
+// 	color: $font-grey;
+// 	font-size: 13px;
+// }
+// input:focus {
+// 	border: 1px solid transparent;
+// 	outline: 1px solid transparent;
+// }
+// input {
+// 	задать бордер согласно макету
+// }

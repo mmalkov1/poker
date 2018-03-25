@@ -3,7 +3,7 @@
 		max-width: 690px;
 		min-height: calc(100vh - 163px);
 		margin: auto;
-		padding-bottom: 55px;
+		padding-bottom: 81px;
 		display: flex;
 		flex-wrap: wrap;
 		align-content: flex-start;
@@ -127,8 +127,13 @@
 			}
 		}
 		&__button-end {
-			@include buttons-orange (165px, 13px, 13px);
+			@include buttons-grey (165px, 13px, 13px);
 			border-radius: 8px;
+
+			&:hover {
+				@include buttons-orange (165px, 13px, 13px);
+				border-radius: 8px;
+			}
 		}
 		&__button-block {
 			flex-basis: 100%;
