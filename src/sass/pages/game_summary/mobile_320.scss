@@ -1,0 +1,62 @@
+@media only screen and (min-width:320px) {
+    .summary {
+      background-color: $main-background;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__primarititle {
+        font-size: 20px;
+        color: $primary-dark-font;
+        text-align: center;
+        font-family: $roboto-font;
+        margin: 12px 0 26px;
+        font-weight: 500;
+      }
+      &__secondarytitle {
+        color: $orange;
+        font-size: 16px;
+        font-family: $roboto-font;
+        margin-bottom: 20px;
+      }
+      &__result {
+        width: 270px;
+        height: 168px;
+        background-color: #ffffff;
+        border: 2px solid #E9EBEC;
+        padding: 16px;
+        margin-bottom: 30px;
+        &-list {
+          columns: 2;
+          font-family: $roboto-font;
+          font-size: 14px;
+        }
+        &-item {
+          color: $font-grey;
+          line-height: 1.5;
+          &:nth-last-child(-n+2) {
+            color: $orange;
+            margin-left: 50px;
+          }
+        }
+      }
+      &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-btn {
+          width: 144px;
+          padding: 7px 0;
+          color: #ffffff;
+          margin-bottom: 8px;
+          background-color: $buttom-grey;
+          border-radius: 4px;
+          font-family: $ubuntu-font;
+          &:hover {
+            background-color: $orange;
+            border-color: #FFBD4A;
+          }
+        }
+      }
+    }
+  }
+  

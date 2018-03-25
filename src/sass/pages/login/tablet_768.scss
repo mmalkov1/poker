@@ -1,0 +1,31 @@
+@media only screen and (min-width:768px) {
+    .login {
+      background-color: $main-background;
+      min-height: calc(100vh - 108px);
+      &__case {
+        box-sizing: border-box;
+        width: 416px;
+        height: 454px;
+        background-color: #ffffff;
+        padding: 35px 30px;
+        margin-bottom: 160px;
+      }
+      &__title{
+          font-size: 30px;
+      }
+      &__form{
+          &-title{
+              font-size: 20px;
+          }
+          &-input{
+              box-sizing: border-box;
+              width: 354px;
+              font-size: 18px;
+              background-color: #ffffff;
+              border: 1px solid $form-border;
+              padding: 10px 16px;
+              color: $form-font;
+          }
+      }
+    }
+  }
