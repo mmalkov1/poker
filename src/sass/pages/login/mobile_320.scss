@@ -1,0 +1,54 @@
+@media only screen and (min-width:320px) {
+    .login {
+      background-color: $main-background;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__case {
+        margin-top: 90px;
+      }
+      &__title {
+        font-size: 20px;
+        font-family: $roboto-font;
+        text-align: center;
+        color: $primary-dark-font;
+        font-weight: 500;
+      }
+      &__form {
+        &-title {
+          color: $orange;
+          font-size: 16px;
+          font-family: $roboto-font;
+          margin-top: 20px;
+        }
+        &-input {
+          width: 256px;
+          font-size: 14px;
+          border: 0 none;
+          background-color: $main-background;
+          border-bottom: 1px solid #C8CBCC;
+          padding-left: 10px;
+          margin-top: 10px;
+        }
+        &-btn {
+          display: block;
+          margin: 0 auto;
+          width: 144px;
+          padding: 7px 0;
+          color: #ffffff;
+          margin-bottom: 8px;
+          background-color: $buttom-grey;
+          border-radius: 4px;
+          font-family: $ubuntu-font;
+          margin-top: 138px;
+          margin-bottom: 30px;
+          &:hover {
+            background-color: $orange;
+            border-color: #FFBD4A;
+          }
+        }
+      }
+    }
+  }
+  
+  
