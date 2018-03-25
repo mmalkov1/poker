@@ -1,8 +1,8 @@
 body {
-  background: #f1f2f2;
+  background: $main-background;
 }
 
-.content {
+.save-game {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,17 +17,19 @@ body {
   align-items: center;
 
   &__button-saved {
+    cursor: pointer;
     display: flex;
     align-items: center;
     width: 290px;
     height: 40px;
-    background-color: #fff;
+    background-color: $buttom-font;
     border: none;
     box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
     font-family: $roboto-font;
     font-size: 16px;
-    color: #808285;
+    color: $font-grey;
     margin: 8px 0;
+    transition: background-color 0.2s;
     &:before {
       content: url("../../img/create_game/list.svg");
       margin-right: 15px;
@@ -35,17 +37,19 @@ body {
   }
 
   &__button-create {
+    cursor: pointer;
     display: flex;
     align-items: center;
     width: 290px;
     height: 40px;
-    background-color: #fff;
+    background-color: $buttom-font;
     font-family: $roboto-font;
     font-size: 16px;
-    color: #808285;
+    color: $font-grey;
     border: none;
     box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
     margin: 8px 0;
+    transition: background-color 0.2s;
     &:before {
       content: url("../../img/create_game/plus.svg");
       margin-right: 15px;
@@ -53,17 +57,19 @@ body {
   }
 
   &__button-account {
+    cursor: pointer;
     display: flex;
     align-items: center;
     width: 290px;
     height: 40px;
-    background-color: #fff;
+    background-color: $buttom-font;
     border: none;
     box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
     font-family: $roboto-font;
     font-size: 16px;
-    color: #808285;
+    color: $font-grey;
     margin: 8px 0;
+    transition: background-color 0.2s;
     &:before {
       content: url("../../img/save_game/settings.svg");
       margin-right: 15px;
@@ -78,13 +84,13 @@ body {
 
   &__title {
     display: none;
+    margin-bottom: 15px;
   }
 
   &__game-name {
     font-size: 18px;
     color: $orange;
     font-family: $roboto-font;
-    margin-top: 15px;
   }
 
   &__link {
@@ -97,7 +103,7 @@ body {
   &__text {
     font-family: $roboto-font;
     font-size: 14px;
-    color: #808285;
+    color: $font-grey;
     text-align: center;
     padding: 10px 0;
     width: 200px;
@@ -106,7 +112,7 @@ body {
   &__table {
     font-family: $roboto-font;
     font-size: 10px;
-    color: #808285;
+    color: $font-grey;
     text-align: center;
     &_border {
       border-right: 2px solid #d2d2d2;
@@ -123,20 +129,22 @@ body {
   }
 
   &__button-game {
+    cursor: pointer;
     height: 30px;
     width: 134px;
-    background-color: #d1d3d4;
+    background-color: $buttom-grey;
     font-family: $ubuntu-font;
-    font-size: 15px;
+    font-size: 11px;
     font-weight: 500;
-    color: #fff;
+    color: $buttom-font;
     margin: 25px 0;
     border: none;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
+    transition: background-color 0.2s;
     &:hover {
-      background-color: #ff6c00;
+      background-color: $orange;
     }
   }
 }
