@@ -11,7 +11,6 @@
     flex-direction: column;
 
     &__button-create {
-      
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -22,12 +21,20 @@
       font-size: 16px;
       color: $font-grey;
       border: none;
-      box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
-      margin: 8px 0;
+      box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3S);
       transition: background-color 0.2s;
       &:before {
         content: url("../../img/create_game/plus.svg");
         margin-right: 15px;
+      }
+      &:active {
+        outline: none;
+        transition: all 1s;
+        -webkit-transform: scale(.9,.9);
+        -moz-transform: scale(.9,.9);
+        -ms-transform: scale(.9,.9);
+        -o-transform: scale(.9,.9);
+        transform: scale(.9,.9);
       }
     }
     &__button-saved {
@@ -37,20 +44,29 @@
       width: 290px;
       height: 40px;
       background-color: $buttom-font;
-      border: none;
-      box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
       font-family: $roboto-font;
       font-size: 16px;
       color: $font-grey;
-      margin: 8px 0;
-      transition: background-color 0.2s;
+      border: none;
+      box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3);
+      //transition: background-color 0.2s;
       &:before {
         content: url("../../img/create_game/list.svg");
         margin-right: 15px;
       }
+      &:active {
+        outline: none;
+        transition: all 1s;
+        -webkit-transform: scale(.9,.9);
+        -moz-transform: scale(.9,.9);
+        -ms-transform: scale(.9,.9);
+        -o-transform: scale(.9,.9);
+        transform: scale(.9,.9);
+      }
     }
     &__create {
       //display: none;
+      padding: 20px;
     }
 
     &__title {
@@ -58,17 +74,28 @@
     }
 
     &__title-min {
-      margin: 10px 0 1px;
       color: $orange;
       font-family: $roboto-font;
+      font-size: 16px;
     }
 
     &__input {
-      width: 99%;
-      height: 30px;
+      background: transparent;
+      width: 98%;
+      padding: 5px 0 0 10px;
+      margin-bottom: 20px;
+      color: $font-grey;
+      font-size: 13px;
       border: none;
       border-bottom: 2px solid #cbcdce;
-      background-color: $main-background;
+      &::placeholder {
+        font-family: $roboto-font;
+        font-weight: 300;
+        font-size: 14px;
+      }
+      &:focus {
+        outline: transparent;
+      }
       &_min {
         border-bottom: 1px solid #cbcdce;
       }
@@ -76,14 +103,21 @@
     &__button-add {
       cursor: pointer;
       display: block;
+      color: #fff;
       background: $buttom-font url("../../../img/create_game/plus.svg") center center ;
       height: 19px;
       width: 19px;
       border: none;
       border-radius: 50%;
-      margin: 10px auto;
-      &:hover {
-        //cursor: pointer;
+      margin: 15px auto;
+      &:active {
+        outline: none;
+        transition: all 1s;
+        -webkit-transform: scale(.8,.8);
+        -moz-transform: scale(.8,.8);
+        -ms-transform: scale(.8,.8);
+        -o-transform: scale(.8,.8);
+        transform: scale(.8,.8);
       }
     }
 
@@ -91,52 +125,54 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 20px;
     }
     &__button-cancel {
       @include buttons-grey (142px, 6px, 15px);
       border-top-left-radius: 5px;
       border-bottom-right-radius: 5px;
-      /*cursor: pointer;
-      height: 30px;
-      width: 142px;
-      background-color: $buttom-grey;
       font-family: $ubuntu-font;
-      font-size: 15px;
       font-weight: 500;
-      color: $buttom-font;
-      margin-top: 8px;
-      border: none;
-      border-top-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
-      transition: background-color 0.2s;*/
+      margin-top: 6px;
+      cursor: pointer;
       &:hover {
         @include buttons-orange (142px, 6px, 15px);
         border-top-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        /*background-color: $orange;*/
+      }
+      &:active {
+        outline: none;
+        transition: all 1s;
+        -webkit-transform: scale(.9,.9);
+        -moz-transform: scale(.9,.9);
+        -ms-transform: scale(.9,.9);
+        -o-transform: scale(.9,.9);
+        transform: scale(.9,.9);
       }
     }
     &__button-game {
-      cursor: pointer;
-      height: 30px;
-      width: 142px;
-      background-color: $buttom-grey;
-      font-family: $ubuntu-font;
-      font-size: 15px;
-      font-weight: 500;
-      color: $buttom-font;
-      margin-top: 8px;
-      border: none;
+      @include buttons-grey(142px, 6px, 15px);
       border-top-left-radius: 5px;
       border-bottom-right-radius: 5px;
-      box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
-      transition: background-color 0.2s;
+      font-family: $ubuntu-font;
+      font-weight: 500;
+      margin-top: 6px;
+      cursor: pointer;
       &:hover {
-        background-color: $orange;
+        @include buttons-orange (142px, 6px, 15px);
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      &:active {
+        outline: none;
+        transition: all 1s;
+        -webkit-transform: scale(.9,.9);
+        -moz-transform: scale(.9,.9);
+        -ms-transform: scale(.9,.9);
+        -o-transform: scale(.9,.9);
+        transform: scale(.9,.9);
       }
     }
   }
-
 }
 
