@@ -27,7 +27,7 @@
           flex-direction: row;
           justify-content: space-between;
           &-btn{
-              width: 126px;
+            @include buttons-grey (126px, 7px, 15px);
           }
       }
     }
