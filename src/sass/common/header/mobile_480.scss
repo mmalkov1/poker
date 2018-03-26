@@ -1,6 +1,13 @@
 @media only screen and (min-width:480px) {
     .header {
-        
+        &__logo {
+            &-go {
+                width: 45px;
+            }
+            &-it {
+            	width: 36px;
+            }
+        }
         &__image-block {
             width: 25px;
             height: 25px;

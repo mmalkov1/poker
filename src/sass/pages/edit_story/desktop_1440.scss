@@ -1,27 +1,27 @@
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 body {
     background-color: $main-background;
 }
-.main {
+.edit-story {
+    margin-top: 50px;
     &__container-form-edit {
-        /*border: 1px solid red;*/
         max-width: 480px;
         padding: 30px;
         margin: 0 auto;
-        background: #fff;
-        box-shadow: 1px 1px 1px 1px $font-grey;
+        background: $list-white;
+        -webkit-box-shadow: 1px 1px 1px 1px $font-grey;
+                box-shadow: 1px 1px 1px 1px $font-grey;
     }
     &__form-edit-title {
         text-align: center;
         font-family: 'Ubuntu',sans-serif;
-        /*font-weight: bold;*/
         font-size: 24px;
     }
     &__edit-container-field {
         padding: 18px 0 0;
-        /*border: 1px solid red;*/
     }
     &__edit-form-label {
         display: block;
@@ -38,36 +38,48 @@ body {
     }
     &__edit-container-buttons {
         padding: 15px 0 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     &__edit-save-button,
     &__edit-cancel-button,
     &__edit-delete-button {
-        flex-basis: 31%;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
         cursor: pointer;
         display: block;
     }
     &__add-edit-add {
-       @include button(25px, 0 0, #FF6C00, 18px, #FFBA57); 
+       width: 25px;
+       font-size: 18px;
        text-align: center;
        height: 25px;
-       line-height: 22px;
+       line-height: 28px;
        border-radius: 50%;
        margin: 0 auto;
        cursor: pointer;
-       box-shadow: 1px 1px 1px 1px $font-grey;
+       -webkit-box-shadow: 1px 1px 1px 1px $font-grey;
+               box-shadow: 1px 1px 1px 1px $font-grey;
+       background-color: $orange;
+       color: $buttom-font;
     }
     &__edit-container-buttons {
         padding: 60px 0 0;
     }
     &__edit-save-button {
-        @include button(142px, 8px 0, #FF6C00, 15px, #FFBA57);
+        @include buttons-orange (140px, 5px, 18px);
     }
     &__edit-cancel-button,
     &__edit-delete-button {
-        @include button(142px, 8px 0, $buttom-grey, 15px, $form-font);
+        @include buttons-grey (140px, 5px, 18px);
     }
 }

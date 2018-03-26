@@ -1,10 +1,26 @@
-@media only screen and (min-width:320px) and (max-width:479px) {
-    .main {
-        &__main {
-            padding: 200px 0 60px;
-        }
-        &__btn {
-            margin-top: 300px;
-        }
+.index {
+    
+    &__main {
+    	padding-top: 100px;
+    }
+    &__text {
+        text-align: center;
+        font-size: 24px;
+        font-family: $ubuntu-font;
+        color: $font-grey;
+
+    }
+    &__container-button {
+        margin-top: 168px;
+    }
+    &__btn {
+		display: block;
+		margin: auto;
+		@include buttons-grey(146px, 10px, 15px);
+
+		&:hover {
+			@include buttons-orange(146px, 10px, 15px);
+		}
     }
 }
+     
