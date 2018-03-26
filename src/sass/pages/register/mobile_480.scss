@@ -1,8 +1,9 @@
 @media only screen and (max-width:480px) {
-    .main {
+    .register {
         &__container-form-registation {
             background: transparent;
-            box-shadow: 1px 1px 1px 1px transparent;
+            -webkit-box-shadow: 1px 1px 1px 1px transparent;
+                    box-shadow: 1px 1px 1px 1px transparent;
         }
         &__form-input {
             border: 2px solid transparent;

@@ -1,9 +1,9 @@
-@media only screen and (min-width:320px) and (max-width:479px) {
-    .main {
+@media only screen and (max-width:479px) {
+    .index {
         &__main {
             padding: 200px 0 60px;
         }
-        &__btn {
+        &__container-button {
             margin-top: 300px;
         }
     }
