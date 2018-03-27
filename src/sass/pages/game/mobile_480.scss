@@ -1,7 +1,12 @@
 @media only screen and (min-width: 480px) {
 	.game {
 		padding-bottom: 45px;
-
+		
+		.cards {
+			&__name {
+				font-size: 16px;
+			} 
+		}
 		.buttons {
 			&__item {
 				@include buttons-grey (205px, 15px, 17px);
