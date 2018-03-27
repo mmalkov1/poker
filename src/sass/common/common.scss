@@ -16,7 +16,9 @@ button {
 		transition: background-color .2s;
 	}
 }
-
+input {
+  font-family: $roboto-font;
+}
 
   @keyframes logo-left {
     from,

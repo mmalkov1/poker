@@ -1,7 +1,6 @@
 @media only screen and (min-width:768px) {
     .login {
       background-color: $main-background;
-      min-height: calc(100vh - 108px);
       &__case {
         box-sizing: border-box;
         width: 416px;
@@ -20,11 +19,19 @@
           &-input{
               box-sizing: border-box;
               width: 354px;
-              font-size: 18px;
+              height: 30px;
+              font-size: 13px;
               background-color: #ffffff;
               border: 1px solid $form-border;
               padding: 10px 16px;
-              color: $form-font;
+              color: $font-grey;
+
+              &:placeholder {
+                color: $form-font;
+              }
+              &:focus {
+                border: 1px solid $form-border;
+              }
           }
       }
     }

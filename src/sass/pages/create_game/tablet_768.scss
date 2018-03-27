@@ -15,6 +15,7 @@
       padding: 20px;
       background-color: $buttom-font;
       margin: 0;
+      margin-bottom: 160px;
 
       &__button-create {
         width: 190px;
@@ -45,13 +46,10 @@
         font-weight: 500;
       }
       &__input {
-        padding: 8px 0 8px 10px;
+        padding-left: 10px;
         margin-top: 14px;
         border: 1px solid $form-border;
-        &::placeholder {
-          color: #d1d3d4;
-          font-size: 18px;
-        }
+        
       }
 
       &__button-add{

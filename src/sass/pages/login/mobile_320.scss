@@ -29,52 +29,28 @@
       border-bottom: 1px solid #C8CBCC;
       padding-left: 10px;
       margin-top: 10px;
-      color: $form-font;
+      color: $font-grey;
+
+      &::placeholder {
+        color: $form-font;
+      }
       &:focus {
         border: 1px solid transparent;
         outline: 1px solid transparent;
         border-bottom: 1px solid #C8CBCC;
-        color: $font-grey;
+        
       }
     }
     &-btn {
-      color: $buttom-font;
-      border-top-right-radius: 4px;
-      border-top-left-radius: 6px;
-      border-bottom-right-radius: 6px;
-      border-bottom-left-radius: 4px;
-      border-top: 2px solid lighten($buttom-grey, 20%);
-      border-left: 2px solid lighten($buttom-grey, 20%);
-      border-right: 2px solid darken($buttom-grey, 15%);
-      border-bottom: 2px solid darken($buttom-grey, 15%);
-      font-family: $ubuntu-font;
+      @include buttons-grey (144px, 7px, 13px);
+      
       display: block;
-      margin: 0 auto;
-      width: 144px;
-      padding: 7px 0;
-      color: #ffffff;
-      margin-bottom: 8px;
-      background-color: $buttom-grey;
-      margin-top: 138px;
-      margin-bottom: 30px;
+      margin: 138px auto 30px;
       &:hover {
-        background-color: $orange;
-        text-align: center;
-        border-top-right-radius: 4px;
-        border-top-left-radius: 6px;
-        border-bottom-right-radius: 6px;
-        border-bottom-left-radius: 4px;
-        border-top: 2px solid lighten($orange, 20%);
-        border-left: 2px solid lighten($orange, 20%);
-        border-right: 2px solid darken($orange, 15%);
-        border-bottom: 2px solid darken($orange, 15%);
+        @include buttons-orange (144px, 7px, 13px);
       }
     }
   }
 }
 
-.footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
+
