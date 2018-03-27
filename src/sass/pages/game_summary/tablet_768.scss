@@ -28,6 +28,9 @@
           justify-content: space-between;
           &-btn{
             @include buttons-grey (126px, 7px, 15px);
+            &:hover{
+              @include buttons-orange (126px, 7px, 15px)
+            }
           }
       }
     }

@@ -7,144 +7,138 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 320px;
-  margin: 0 auto;
-}
 
-.result {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &__button-saved {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    width: 290px;
-    height: 40px;
-    background-color: $buttom-font;
-    border: none;
-    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
-    font-family: $roboto-font;
-    font-size: 16px;
-    color: $font-grey;
-    margin: 8px 0;
-    transition: background-color 0.2s;
-    &:before {
-      content: url("../../img/create_game/list.svg");
-      margin-right: 15px;
-    }
-  }
-
-  &__button-create {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    width: 290px;
-    height: 40px;
-    background-color: $buttom-font;
-    font-family: $roboto-font;
-    font-size: 16px;
-    color: $font-grey;
-    border: none;
-    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
-    margin: 8px 0;
-    transition: background-color 0.2s;
-    &:before {
-      content: url("../../img/create_game/plus.svg");
-      margin-right: 15px;
-    }
-  }
-
-  &__button-account {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    width: 290px;
-    height: 40px;
-    background-color: $buttom-font;
-    border: none;
-    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
-    font-family: $roboto-font;
-    font-size: 16px;
-    color: $font-grey;
-    margin: 8px 0;
-    transition: background-color 0.2s;
-    &:before {
-      content: url("../../img/save_game/settings.svg");
-      margin-right: 15px;
-    }
-  }
-  &__information {
+  .result {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-  }
 
-  &__title {
-    display: none;
-    margin-bottom: 15px;
-  }
-
-  &__game-name {
-    font-size: 18px;
-    color: $orange;
-    font-family: $roboto-font;
-  }
-
-  &__link {
-    font-family: $roboto-font;
-    font-size: 10px;
-    color: #202b52;
-    margin: 5px 0 30px;
-  }
-
-  &__text {
-    font-family: $roboto-font;
-    font-size: 14px;
-    color: $font-grey;
-    text-align: center;
-    padding: 10px 0;
-    width: 200px;
-  }
-
-  &__table {
-    font-family: $roboto-font;
-    font-size: 10px;
-    color: $font-grey;
-    text-align: center;
-    &_border {
-      border-right: 2px solid #d2d2d2;
+    &__button-saved {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      width: 290px;
+      height: 40px;
+      background-color: $buttom-font;
+      font-family: $roboto-font;
+      font-size: 16px;
+      color: $font-grey;
+      border: none;
+      box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3);
+      margin: 8px 0;
+      //transition: background-color 0.2s;
+      &:before {
+        content: url("../../img/create_game/list.svg");
+        margin-right: 15px;
+      }
     }
-  }
 
-  &__table-title {
-    color: $orange;
-    padding: 0 5px;
-  }
+    &__button-create {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      width: 290px;
+      height: 40px;
+      background-color: $buttom-font;
+      font-family: $roboto-font;
+      font-size: 16px;
+      color: $font-grey;
+      border: none;
+      box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3);
+      margin: 8px 0;
+      //transition: background-color 0.2s;
+      &:before {
+        content: url("../../img/create_game/plus.svg");
+        margin-right: 15px;
+      }
+    }
 
-  &__table-data {
-    padding: 2px 5px;
-  }
+    &__button-account {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      width: 290px;
+      height: 40px;
+      background-color: $buttom-font;
+      font-family: $roboto-font;
+      font-size: 16px;
+      color: $font-grey;
+      border: none;
+      box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3);
+      margin: 8px 0;
+      //transition: background-color 0.2s;
+      &:before {
+        content: url("../../img/save_game/settings.svg");
+        margin-right: 15px;
+      }
+    }
+    &__information {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-  &__button-game {
-    cursor: pointer;
-    height: 30px;
-    width: 134px;
-    background-color: $buttom-grey;
-    font-family: $ubuntu-font;
-    font-size: 11px;
-    font-weight: 500;
-    color: $buttom-font;
-    margin: 25px 0;
-    border: none;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.75);
-    transition: background-color 0.2s;
-    &:hover {
-      background-color: $orange;
+    &__title {
+      display: none;
+    }
+
+    &__game-name {
+      font-size: 18px;
+      font-weight: 400;
+      color: $orange;
+      font-family: $roboto-font;
+      margin-top: 14px;
+    }
+
+    &__link {
+      font-family: $roboto-font;
+      font-size: 10px;
+      color: #202b52;
+      margin: 5px 0 30px;
+    }
+
+    &__text {
+      font-family: $roboto-font;
+      font-size: 14px;
+      color: $font-grey;
+      text-align: center;
+      line-height: 1.2;
+      padding: 10px 0;
+      width: 200px;
+    }
+
+    &__table {
+      font-family: $roboto-font;
+      font-size: 10px;
+      color: $font-grey;
+      text-align: center;
+      line-height: 1.2;
+      &_border {
+        border-right: 2px solid #d2d2d2;
+      }
+    }
+
+    &__table-title {
+      color: $orange;
+      padding: 0 6px;
+    }
+
+    &__table-data {
+      padding: 2px 6px;
+    }
+
+    &__button-game {
+      @include buttons-grey(134px, 6px, 11px);
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      font-family: $ubuntu-font;
+      font-weight: 500;
+      margin: 25px 0;
+      cursor: pointer;
+      &:hover {
+        @include buttons-orange(134px, 6px, 11px);
+      }
     }
   }
 }

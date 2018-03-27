@@ -1,10 +1,12 @@
 @media all and (min-width: 768px){
   .create-game {
-    width: 708px;
-    position: relative;
-    padding: 0 30px 70px;
+    box-sizing: border-box;
     display: flex;
     align-items: flex-end;
+    width: 768px;
+    position: relative;
+    padding: 0 30px;
+    margin-top: 30px;
   
   
     .form {
@@ -28,7 +30,7 @@
       }
       &__create {
         display: block;
-        margin: 0 60px;
+        padding: 20px 60px;
       }
       &__title {
         display: block;
@@ -38,9 +40,18 @@
         color: $form-title-darkblue;
         margin-bottom: 20px;
       }
+      &__title-min {
+        font-size: 21px;
+        font-weight: 500;
+      }
       &__input {
-        background-color: $buttom-font;
+        padding: 8px 0 8px 10px;
+        margin-top: 14px;
         border: 1px solid $form-border;
+        &::placeholder {
+          color: #d1d3d4;
+          font-size: 18px;
+        }
       }
 
       &__button-add{
@@ -51,16 +62,20 @@
       &__button-block {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        margin: 30px;
+        justify-content: space-around; //for 11 IE
+        justify-content: space-evenly;
       }
       &__button-cancel {
-        height: 30px;
-        width: 125px;
+        @include buttons-grey (125px, 6px, 15px);
+        &:hover {
+          @include buttons-orange(125px, 6px, 15px)
+        }
       }
       &__button-game {
-        height: 30px;
-        width: 125px;
+        @include buttons-grey (125px, 6px, 15px);
+        &:hover {
+          @include buttons-orange(125px, 6px, 15px)
+        }
       }
     }
   }
