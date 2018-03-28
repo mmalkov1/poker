@@ -45,7 +45,7 @@
       font-size: 0;
     }
 
-    &__title-min {
+    &__label {
       display: block; //for IE 11
       color: $orange;
       font-family: $roboto-font;
@@ -145,6 +145,7 @@
       }
     }
 
+    //styles for inline SVG
     .button-create {
 
       &__svg-plus {
@@ -161,6 +162,7 @@
       }
     }
 
+    //styles for inline SVG
     .button-saved {
 
       &__svg-list {

@@ -42,11 +42,9 @@
         align-items: flex-start;
       }
       &__title {
-        display: block;
-        text-align: center;
         font-family: $ubuntu-font;
         font-size: 23px;
-        color: $form-title-darkblue; //#414042;
+        color: $form-title-darkblue;
       }
       &__game-name {
         position: relative;

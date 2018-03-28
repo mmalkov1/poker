@@ -65,7 +65,7 @@ body {
     }
 
     &__title {
-      display: none;
+      font-size: 0;
     }
 
     &__game-name {
@@ -126,6 +126,7 @@ body {
       }
     }
 
+    //styles for inline SVG
     .button-saved {
 
       &__svg-list {
@@ -142,6 +143,7 @@ body {
       }
     }
 
+    //styles for inline SVG
     .button-create {
 
       &__svg-plus {
@@ -158,6 +160,7 @@ body {
       }
     }
 
+    //styles for inline SVG
     .button-account {
 
       &__settings {
