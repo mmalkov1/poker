@@ -26,11 +26,6 @@ body {
       border: none;
       box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3);
       margin: 8px 0;
-      //transition: background-color 0.2s;
-      &:before {
-        content: url("../../img/create_game/list.svg");
-        margin-right: 15px;
-      }
     }
 
     &__button-create {
@@ -46,11 +41,6 @@ body {
       border: none;
       box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3);
       margin: 8px 0;
-      //transition: background-color 0.2s;
-      &:before {
-        content: url("../../img/create_game/plus.svg");
-        margin-right: 15px;
-      }
     }
 
     &__button-account {
@@ -66,11 +56,6 @@ body {
       border: none;
       box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3);
       margin: 8px 0;
-      //transition: background-color 0.2s;
-      &:before {
-        content: url("../../img/save_game/settings.svg");
-        margin-right: 15px;
-      }
     }
     &__information {
       display: flex;
@@ -138,6 +123,54 @@ body {
       cursor: pointer;
       &:hover {
         @include buttons-orange(134px, 6px, 11px);
+      }
+    }
+
+    .button-saved {
+
+      &__svg-list {
+        width: 26px;
+        height: 26px;
+        margin-right: 15px;
+
+        &_active-path {
+          fill: $orange;
+        }
+        &_secondary-path {
+          fill: #fff;
+        }
+      }
+    }
+
+    .button-create {
+
+      &__svg-plus {
+        width: 26px;
+        height: 26px;
+        margin-right: 15px;
+
+        &_active-path {
+          fill: $orange;
+        }
+        &_secondary-path {
+          fill: #fff;
+        }
+      }
+    }
+
+    .button-account {
+
+      &__settings {
+        width: 26px;
+        height: 26px;
+        margin-right: 15px;
+
+        &_active-path {
+          fill: $orange;
+        }
+        &_secondary-path {
+          fill: #fff;
+        }
       }
     }
   }
