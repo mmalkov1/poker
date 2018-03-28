@@ -23,19 +23,6 @@
       border: none;
       box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3S);
       transition: background-color 0.2s;
-      &:before {
-        content: url("../../img/create_game/plus.svg");
-        margin-right: 15px;
-      }
-      &:active {
-        outline: none;
-        transition: all 1s;
-        -webkit-transform: scale(.9,.9);
-        -moz-transform: scale(.9,.9);
-        -ms-transform: scale(.9,.9);
-        -o-transform: scale(.9,.9);
-        transform: scale(.9,.9);
-      }
     }
     &__button-saved {
       cursor: pointer;
@@ -49,28 +36,13 @@
       color: $font-grey;
       border: none;
       box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3);
-      //transition: background-color 0.2s;
-      &:before {
-        content: url("../../img/create_game/list.svg");
-        margin-right: 15px;
-      }
-      &:active {
-        outline: none;
-        transition: all 1s;
-        -webkit-transform: scale(.9,.9);
-        -moz-transform: scale(.9,.9);
-        -ms-transform: scale(.9,.9);
-        -o-transform: scale(.9,.9);
-        transform: scale(.9,.9);
-      }
     }
     &__create {
-      //display: none;
       padding: 20px;
     }
 
     &__title {
-      display: none;
+      font-size: 0;
     }
 
     &__title-min {
@@ -102,7 +74,6 @@
     &__button-add {
       cursor: pointer;
       display: block;
-      color: #fff;
       background: $buttom-font url("../../../img/create_game/plus.svg") center center ;
       height: 19px;
       width: 19px;
@@ -172,6 +143,37 @@
         transform: scale(.9,.9);
       }
     }
+
+    .button-create {
+
+      &__svg-plus {
+        width: 28px;
+        height: 28px;
+        margin-right: 15px;
+
+        &_active-path {
+          fill: $orange;
+        }
+        &_secondary-path {
+          fill: #fff;
+        }
+      }
+    }
+
+    .button-saved {
+
+      &__svg-list {
+        width: 28px;
+        height: 28px;
+        margin-right: 15px;
+
+        &_active-path {
+          fill: $orange;
+        }
+        &_secondary-path {
+          fill: #fff;
+        }
+      }
+    }
   }
 }
-
