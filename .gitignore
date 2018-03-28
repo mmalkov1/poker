@@ -64,7 +64,3 @@ package-lock.json
 
 .idea
 
-
-#build ignore
-
-build
