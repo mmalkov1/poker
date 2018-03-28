@@ -2,10 +2,12 @@
   background-color: $main-background;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
+
   &__case {
     margin-top: 90px;
   }
+
   &__title {
     font-size: 20px;
     font-family: $roboto-font;
@@ -13,14 +15,17 @@
     color: $primary-dark-font;
     font-weight: 500;
   }
-  &__form {
-    &-title {
+
+  .form {
+    &__title {
+      display: block;
       color: $orange;
       font-size: 16px;
       font-family: $roboto-font;
       margin-top: 20px;
     }
-    &-input {
+
+    &__input {
       height: 30px;
       width: 256px;
       font-size: 13px;
@@ -34,18 +39,18 @@
       &::placeholder {
         color: $form-font;
       }
+
       &:focus {
         border: 1px solid transparent;
         outline: 1px solid transparent;
         border-bottom: 1px solid #C8CBCC;
-        
       }
     }
-    &-btn {
+    &__btn {
       @include buttons-grey (144px, 7px, 13px);
-      
       display: block;
       margin: 138px auto 30px;
+
       &:hover {
         @include buttons-orange (144px, 7px, 13px);
       }

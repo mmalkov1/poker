@@ -2,6 +2,7 @@
     .summary {
       background-color: $main-background;
       min-height: calc(100vh - 108px);
+
       &__case {
           box-sizing: border-box;
         width: 336px;
@@ -11,21 +12,26 @@
         margin-bottom: 200px;
         padding: 32px;
       }
+
       &__primarititle {
         font-size: 30px;
       }
+
       &__secondarytitle {
         font-size: 20px;
       }
+
       &__result {
           box-sizing: border-box;
         width: 270px;
         height: 168px;
       }
+      
       &__box{
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          
           &-btn{
             @include buttons-grey (126px, 7px, 15px);
             &:hover{
