@@ -19,17 +19,21 @@
 				margin-left: 30px;
 				padding-bottom: 55px;
 			}
+
 			&__block {
 				margin-bottom: 0;
 				padding-right: 0;
 			}
+
 			&__image {
 				width: 97px;
 			}
+
 			&__name {
 				font-size: 16px;
 			}
 		}
+
 		.buttons {
 			flex-basis: 100%;
 			margin-top: 45px;
@@ -51,9 +55,11 @@
 					order: -1;
 				}
 			}
+
 			&__cards {
 				margin-top: 108px;
 			}
+
 			&__card-block {
 				flex-basis: 10%;
 				margin-bottom: 70px;
@@ -62,6 +68,7 @@
 					transform: translateY(-30px);
 				}
 			}
+
 			&__item {
 				@include buttons-grey (160px, 13px, 13px);
 				border-radius: 8px;
@@ -72,6 +79,7 @@
 					border-radius: 8px;
 				}
 			}
+
 			&__card-item {
 				width: 40px;
 				height: 65px;
@@ -83,6 +91,7 @@
 				transition: all 0.2s;
 			}
 		}
+
 		.questions {
 			order: -1;
 			flex-basis: 36%;
@@ -117,6 +126,7 @@
 					line-height: 25px;
 				}
 			}
+
 			&__add-item {
 				width: 26px;
 				height: 26px;
@@ -126,6 +136,7 @@
 				background-color: $list-grey;
 			}
 		}
+
 		&__button-end {
 			@include buttons-grey (165px, 13px, 13px);
 			border-radius: 8px;
@@ -135,6 +146,7 @@
 				border-radius: 8px;
 			}
 		}
+		
 		&__button-block {
 			flex-basis: 100%;
 		}
