@@ -18,6 +18,7 @@
 
   .form {
     &__title {
+      display: block;
       color: $orange;
       font-size: 16px;
       font-family: $roboto-font;
