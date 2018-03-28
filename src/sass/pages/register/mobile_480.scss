@@ -1,7 +1,11 @@
 @media only screen and (min-width:480px) {
-    .register {
-        &__container-buttons {
-            padding: 80px 0 0;
-        }
-    }
+  .register {
+
+  	.form {
+
+  		&__continue-button {
+        margin: 80px auto 0;
+      }
+  	}
+  }
 }
