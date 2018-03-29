@@ -51,11 +51,6 @@
         
       }
 
-      &__button-add{
-        height: 27px;
-        width: 27px;
-      }
-
       &__button-block {
         display: flex;
         flex-direction: row;
@@ -72,6 +67,15 @@
         @include buttons-grey (125px, 6px, 15px);
         &:hover {
           @include buttons-orange(125px, 6px, 15px)
+        }
+      }
+
+      //styles for inline SVG
+      .button-add {
+
+        &__svg-plus {
+          width: 27px;
+          height: 27px;
         }
       }
     }
