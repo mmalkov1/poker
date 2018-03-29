@@ -3,11 +3,14 @@
 		padding-bottom: 45px;
 		
 		.cards {
+
 			&__name {
 				font-size: 16px;
 			} 
 		}
+
 		.buttons {
+
 			&__item {
 				@include buttons-grey (205px, 15px, 17px);
 				border-radius: 8px;
@@ -17,6 +20,7 @@
 					border-radius: 8px;
 				}
 			}
+
 			&__card-item {
 				width: 64px;
 				height: 105px;
@@ -30,28 +34,32 @@
 			height: 14px;
 			position: relative;
 			bottom: -2px;
-		}
-		&__icon-reset {
-			width: 14px;
-			height: 14px;
-			position: relative;
-			bottom: -2px;
-			transform: scaleX(-1);
-		}
-		&__icon-next {
-			width: 14px;
-			height: 14px;
-			position: relative;
-			bottom: -2px;
-		}
-		&__icon-previous {
-			width: 14px;
-			height: 14px;
-			position: relative;
-			bottom: -2px;
-		}
+			}
+
+			&__icon-reset {
+				width: 14px;
+				height: 14px;
+				position: relative;
+				bottom: -2px;
+				transform: scaleX(-1);
+			}
+
+			&__icon-next {
+				width: 14px;
+				height: 14px;
+				position: relative;
+				bottom: -2px;
+			}
+
+			&__icon-previous {
+				width: 14px;
+				height: 14px;
+				position: relative;
+				bottom: -2px;
+			}
 		}
 		.questions {
+
 			&__item {
 				height: 57px;
 				margin-bottom: 15px;
@@ -71,6 +79,7 @@
 					line-height: 42px;
 				}
 			}
+
 			&__add-item {
 				width: 33px;
 				height: 33px;
@@ -79,6 +88,7 @@
 				margin: 22px auto 31px;
 			}
 		}
+		
 		&__button-end {
 			@include buttons-grey (205px, 15px, 17px);
 			border-radius: 8px;
